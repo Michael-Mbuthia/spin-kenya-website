@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spin Kenya — Table Tennis Club</title>
+<meta name="description" content="Spin Kenya is a Kenyan table tennis club building competitive players and growing the sport across the country.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#home">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="Spin Kenya — back to top">
+      <img src="images/logo.png" alt="Spin Kenya logo" class="brand-mark">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#merch">Merch</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-links-mobile" id="navMobile" aria-label="Mobile">
+    <a href="#about">About</a>
+    <a href="#merch">Merch</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="home">
+
+  <!-- HERO / CAROUSEL -->
+  <section class="hero" aria-label="Spin Kenya team">
+    <div class="carousel" id="carousel">
+      <div class="slide is-active" style="background-image:url('images/hero-1.jpeg')"></div>
+      <div class="slide" style="background-image:url('images/hero-2.jpeg')"></div>
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">Nairobi · Kenya</p>
+      <h1 class="hero-title">Every point<br>is earned.</h1>
+      <p class="hero-sub">Spin Kenya trains and fields competitive table tennis players, one rally at a time.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">Meet the club</a>
+        <a href="#contact" class="btn btn-ghost">Join a session</a>
+      </div>
+    </div>
+    <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Featured photos"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-lead">
+        <h2>About the club</h2>
+        <p class="lead">Spin Kenya is a table tennis club built around discipline on the table and community off it. We coach players from first serve to national competition.</p>
+      </div>
+      <div class="about-cards">
+        <div class="value-card value-card--vision">
+          <span class="value-label">Vision</span>
+          <p>To make Kenya a recognised force in African table tennis — a country that consistently produces players who compete, and win, on continental and world stages.</p>
+        </div>
+        <div class="value-card value-card--mission">
+          <span class="value-label">Mission</span>
+          <p>We develop athletes through structured coaching, regular league play and mentorship, while making the sport accessible to new players across Kenyan communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MERCHANDISE -->
+  <section class="merch" id="merch">
+    <div class="section-inner">
+      <div class="merch-head">
+        <h2>Club merchandise</h2>
+        <p class="lead">Wear the colours. Every shirt supports the squad's training and travel.</p>
+      </div>
+      <div class="merch-grid">
+        <div class="merch-carousel" id="merchCarousel">
+          <div class="merch-slide is-active" data-color="Black">
+            <img src="images/tshirt-black.jpg" alt="Spin Kenya black cotton t-shirt, front and back">
+          </div>
+          <div class="merch-slide" data-color="Red">
+            <img src="images/tshirt-red.jpg" alt="Spin Kenya red cotton t-shirt, front and back">
+          </div>
+          <div class="merch-slide" data-color="White">
+            <img src="images/tshirt-white.jpg" alt="Spin Kenya white cotton t-shirt, front and back">
+          </div>
+          <div class="carousel-dots carousel-dots--dark" id="merchDots" role="tablist" aria-label="T-shirt colours"></div>
+        </div>
+        <div class="merch-card">
+          <span class="merch-tag">Fan T-Shirt</span>
+          <h3>Spin Kenya Cotton T-Shirt</h3>
+          <p>The official supporters' tee, in Black, Red or White. Unisex fit, available in all sizes.</p>
+
+          <div class="merch-swatches" id="merchSwatches" role="tablist" aria-label="Choose colour"></div>
+
+          <div class="merch-price">
+            <span class="price">KSh 1,000</span>
+          </div>
+          <a href="https://wa.me/254725232915" target="_blank" rel="noopener" class="btn btn-primary btn-block">Order via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="contact-head">
+        <h2>Get in touch</h2>
+        <p class="lead">Message any coach on the roster below directly on WhatsApp, or reach the club by email.</p>
+      </div>
+
+      <div class="contact-grid">
+        <ul class="roster-list" id="rosterList"><!-- filled by script.js --></ul>
+
+        <div class="contact-email-card">
+          <span class="value-label">Email</span>
+          <a href="mailto:spinkenya1@gmail.com" class="email-link">spinkenya1@gmail.com</a>
+          <p class="contact-note">For sponsorships, partnerships and press, email is best. For training and merch, WhatsApp is fastest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="section-inner footer-grid">
+
+    <div class="footer-brand">
+      <a href="#home" aria-label="Spin Kenya — back to top">
+        <img src="images/logo.png" alt="Spin Kenya logo" class="footer-mark">
+      </a>
+      <p>A Kenyan table tennis club, training players and growing the sport nationwide.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Phone</h4>
+      <ul class="footer-phones" id="footerPhones"><!-- filled by script.js --></ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Email</h4>
+      <a href="mailto:spinkenya1@gmail.com">spinkenya1@gmail.com</a>
+
+      <h4 class="footer-col-spacer">Follow</h4>
+      <div class="social-row">
+        <a href="https://www.tiktok.com/@spin_kenya?_r=1&_t=ZS-99yzuQFPzRR" target="_blank" rel="noopener" aria-label="Spin Kenya on TikTok" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-3.14-1.4v9.8a5.38 5.38 0 1 1-4.62-5.33v2.3a3.08 3.08 0 1 0 2.16 2.94V2h2.42a4.28 4.28 0 0 0 3.18 4.14z"/></svg>
+        </a>
+        <a href="https://whatsapp.com/channel/0029VbCh2mYLI8YSkU8wpm1E" target="_blank" rel="noopener" aria-label="Spin Kenya WhatsApp channel" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.41-1.36a9.87 9.87 0 0 0 4.63 1.15h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.75 14.03c-.24.68-1.4 1.3-1.93 1.37-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.16-4.94-4.35-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.59-.36.79-.36.2 0 .4 0 .57.01.18.01.43-.07.67.51.24.6.83 2.05.9 2.2.07.15.12.33.02.52-.1.19-.15.31-.3.48-.15.17-.31.38-.44.51-.15.15-.31.31-.13.6.18.29.79 1.3 1.69 2.11 1.16 1.04 2.14 1.36 2.43 1.51.29.15.46.13.63-.07.17-.2.72-.83.92-1.12.19-.29.39-.24.65-.14.27.1 1.7.8 1.99.94.29.15.48.22.55.34.07.13.07.72-.17 1.4z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/spin_kenya?stkn=dDY2eGI0Yjlra3dy" target="_blank" rel="noopener" aria-label="Spin Kenya on Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@spin_kenya" target="_blank" rel="noopener" aria-label="Spin Kenya on YouTube" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12s0-3.2-.4-4.7a2.9 2.9 0 0 0-2-2C17.9 5 12 5 12 5s-5.9 0-7.6.3a2.9 2.9 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.7a2.9 2.9 0 0 0 2 2C6.1 19 12 19 12 19s5.9 0 7.6-.3a2.9 2.9 0 0 0 2-2C22 15.2 22 12 22 12zM10 15.2V8.8l6 3.2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 SPIN Kenya Table Tennis Club. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
